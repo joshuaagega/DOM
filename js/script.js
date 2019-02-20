@@ -1,15 +1,22 @@
 $(document).ready(function() {
   $("button#hello").click(function() {
-    $("ul#user").prepend("<li>Hello!</li>");
-      $("ul#webpage").prepend("<li>why hello?</li>");
-        $('li').click(function(){
-           alert ('hi');
-   });
+   $("ul#user").prepend("<li>Hello!</li>");
+    $("ul#webpage").prepend("<li>Why hello there!</li>");
+
+$("ul#user").children("li").first().click(function() {
+    alert('hi');
+});
+  $("ul#webpage").children("li").first().click(function() {
+    alert('hi');
+});
+    $('li').css('background-color','blue');
 });
 $("button#goodbye").click(function() {
   $("ul#user").prepend("<li>goodbye</li>");
     $("ul#webpage").prepend("<li>Why say goodbye?</li>");
-      $('li').css('background-color','green');
+      $('li').click(function(){
+          alert ('hi');
+});
 });
 
 $("button#stop").click(function(){

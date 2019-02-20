@@ -9,7 +9,14 @@ $("ul#user").children("li").first().click(function() {
   $("ul#webpage").children("li").first().click(function() {
     alert('hi');
 });
-    $('li').css('background-color','blue');
+
+$("ul#user").children("li").first().click(function() {
+  $(this).remove();
+});
+  $("ul#webpage").children("li").first().click(function() {
+    $(this).remove();
+});
+ $('li').css('background-color','blue');
 });
 $("button#goodbye").click(function() {
   $("ul#user").prepend("<li>goodbye</li>");
